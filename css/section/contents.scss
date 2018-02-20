@@ -1,0 +1,171 @@
+.contents {
+	font-family: "Tahoma";
+	margin: 0 50px 40px 0;
+	margin-left: $block-left_width + 20px;
+	
+	padding-top: 25px;
+}
+
+.title {
+	font-size: 1.125rem;
+	color: #177cbc;
+	margin-bottom: 20px;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 2px;
+		background: #177cbc;
+		background: -webkit-linear-gradient(left, #177cbc 0%, #fff 90%);
+		background: -moz-linear-gradient(left, #177cbc 0%, #fff 30%);
+		background: -ms-linear-gradient(left, #177cbc 0%, #fff 30%);
+		background: -o-linear-gradient(left, #177cbc 0%, #fff 30%); 
+	}
+}
+
+.states__list {
+	margin-bottom: 20px;
+}
+
+.item__state {
+	@include clearfix;
+	border: 1px solid #000;
+	border-top: none;
+	&:first-child {
+		border-top: 1px solid #000;
+	}
+}
+
+.pic__state {
+	float: left;
+	width: 33%;
+	min-width: 210px;
+	border-right: 1px solid #000;
+	box-sizing: border-box;
+	height: 260px;
+	text-align: center;
+	&:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+}
+
+.pic__state_avatar {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 210px;
+	width: 210px;
+	border: 1px solid #000;
+	position: relative;
+}
+
+.state__img {
+	position: absolute;
+	left: -9999px;
+}
+
+.state {
+	position: relative;
+	float: left;
+	width: 67%;
+	padding: 10px 0 0 10px;
+	height: 260px;
+	box-sizing: border-box;
+	@include clearfix;
+}
+
+.title__state {
+	font-size: 1.125rem;
+}
+
+.checks__list {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font: 0.875rem Arial;
+}
+
+.button__add {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.btn {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	height: 25px;
+	width: 76px;
+	background: #000 url("/img/add.png") center no-repeat;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-align: right;
+	padding: 4px 10px 4px 0;
+	font: 0.875rem Arial;
+}
+
+
+//paginator
+.paginator {
+	color: #177cbc;
+	font: 14px "Tahoma";
+
+	@include clearfix;
+}
+
+.page__navigation {
+	width: 30%;
+	float: left;
+}
+
+.page__list, .page__next, .page__last {
+	display: inline-block;
+	margin-right: 15px;
+
+	a{
+		color: #177cbc;
+	}
+}
+
+.page__item {
+	display: inline-block;
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.page__item-link {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+a.page__item-link_active {
+	border: 1px solid #000;
+	border-radius: 50%;
+	background: #177cbc;
+	text-decoration: none;
+	color: #fff;
+}
+
+.page__number {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	width: 65%;
+}
+
+.length-state {
+	float: right;
+}

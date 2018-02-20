@@ -1,0 +1,16 @@
+.block-left {
+	position: absolute;
+	width: $block-left_width;
+	height: 100%;
+	background: #f6f6f6;
+	padding-top: 25px;
+}
+
+.pic__list {
+	text-align: center;
+}
+
+.pic__item {
+	display: inline-block;
+	padding-bottom: 10px;
+}

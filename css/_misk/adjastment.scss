@@ -1,0 +1,35 @@
+// adjastment vars
+$block-left_width: 200px;
+
+//adjastment style
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.42;
+	background: #fff;
+	-webkit-font-smoothing: antialiased; 
+}
+
+html, body, p, ul, li, h1, h2 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.maincontent {
+	position: relative;
+	min-height: 100%;
+}
